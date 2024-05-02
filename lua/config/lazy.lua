@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   pattern = "*",
   command = "setlocal wrap linebreak",
 })
+vim.opt.breakindent = true
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
